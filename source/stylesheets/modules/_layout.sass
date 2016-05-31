@@ -21,10 +21,33 @@ html, body
   margin-left: auto
   margin-right: auto
 
+.m-section-bg
+  +headings-font
+  +sq(390px)
+  +il(390px)
+  +rounded(50%)
+  top: -235px
+  z-index: 0
+  background: $gray-lightest
+  font-size: 60px
+  line-height: 60px
+  padding-top: 220px
+  text-align: center
+  color: white
+  text-transform: uppercase
+  font-weight: bold
+
 #m-body
+  +transition(all .3s cubic-bezier(.02, .01, .47, 1))
   width: 300%
   height: 200%
   overflow: hidden
   position: relative
   left: -100%
   top: -100%
+  &.m-show-about
+    left: 0
+  &.m-show-contact
+    top: 0
+  &.m-show-work
+    left: -200%
