@@ -1,0 +1,67 @@
+@-webkit-keyframes menuWiggle
+  0%
+    +rotate(0)
+  33%
+    +rotate(-18deg)
+  66%
+    +rotate(18deg)
+  100%
+    +rotate(0)
+
+@keyframes menuWiggle
+  0%
+    +rotate(0)
+  33%
+    +rotate(-18deg)
+  66%
+    +rotate(18deg)
+  100%
+    +rotate(0)
+
+.m-menu
+  +ul
+  +sq(280px)
+  +icl(280px, 280px)
+  .m-li-tl
+    +topleft
+  .m-li-tr
+    +topright
+  .m-li-bl
+    +bottomleft
+  .m-li-br
+    +bottomright
+  a
+    +sq(115px)
+    +rounded(50%)
+    +custom-transition(background-color)
+    display: block
+    color: white
+    line-height: 115px
+    background: $gray-light
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+    &:hover
+      background: $gray-dark
+
+.m-menu
+  .m-menu-blog-link
+    bottom: -15px
+    right: -15px
+    a
+      +sq(145px)
+      background: $gray-dark
+      &:hover
+        -webkit-animation-name: menuWiggle
+        animation-name: menuWiggle
+        -webkit-animation-duration: .5s
+        animation-duration: .5s
+        -webkit-animation-fill-mode: both
+        animation-fill-mode: both
+        -webkit-animation-iteration-count: 1
+        animation-iteration-count: 1
+    img
+      $w: 90px
+      +icl($w, $w)
+      width: $w
+
