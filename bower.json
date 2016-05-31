@@ -1,0 +1,22 @@
+{
+  "name": "petrmarek.eu",
+  "homepage": "http://www.petrmarek.eu",
+  "authors": [
+    "Petr Marek <contact@petrmarek.eu>"
+  ],
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "build"
+  ],
+  "dependencies": {
+    "jquery": "^1.12.3",
+    "mreq-mixins": "^0.0.6",
+    "respond": "^1.4.2",
+    "bootstrap-sass": "^3.3.6"
+  }
+}
