@@ -4,29 +4,32 @@
       .container
         h2.m-section-bg Contact
         ' contact
-      a.m-back-link href="#" menu
+      a.m-back-link.m-title href="#" title="Back to menu" menu
 
   .m-section-row
     section.m-section.m-section-third id="m-about"
       .container
         h2.m-section-bg About
         ' about
-      a.m-back-link href="#" menu
+      a.m-back-link.m-title href="#" title="Back to menu" menu
 
     section.m-section.m-section-third id="m-menu"
       ul.m-menu
         li.m-li.m-li-tl
-          a href="#about" About
+          a.m-title href="#about" title="About me"
+           ' About
         li.m-li.m-li-tr
-          a href="#work" Work
+          a.m-title href="#work" title="Some projects I've worked on"
+           ' Work
         li.m-li.m-li-bl
-          a href="#contact" Contact
+          a.m-title href="#contact" title="Contact information"
+           ' Contact
         li.m-li.m-li-br.m-menu-blog-link
-          a href="http://www.mreq.eu"
+          a.m-title href="http://www.mreq.eu" title="My blog - mreq.eu"
             = image_tag 'mstile-144x144.png'
 
     section.m-section.m-section-third id="m-work"
       .container
         h2.m-section-bg Work
         ' work
-      a.m-back-link href="#" menu
+      a.m-back-link.m-title href="#" title="Back to menu" menu
