@@ -1,0 +1,48 @@
+.m-back-link
+  +sq($menu-anchor-size)
+  +rounded(50%)
+  +custom-transition(all)
+  background: $gray-lightest
+  position: absolute
+  color: white
+  text-align: center
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 30px
+  line-height: $menu-anchor-size
+  &:hover, &:focus
+    background: $gray-light
+    color: white
+
+  #m-contact &
+    bottom: 0
+    left: 50%
+    margin-left: -$menu-anchor-size/2
+    &:hover, &:focus
+      margin-bottom: 5px
+  #m-body.m-show-contact #m-contact &
+    bottom: (( -$menu-anchor-size/2 ))
+    line-height: $menu-anchor-size - 45px
+
+  #m-about &
+    +rotate(-90deg)
+    top: 50%
+    margin-top: -$menu-anchor-size/2
+    right: 0
+    &:hover, &:focus
+      margin-right: 5px
+  #m-body.m-show-about #m-about &
+    right: (( -$menu-anchor-size/2 ))
+    line-height: $menu-anchor-size - 45px
+
+  #m-work &
+    +rotate(90deg)
+    top: 50%
+    left: 0
+    margin-top: -$menu-anchor-size/2
+    &:hover, &:focus
+      margin-left: 5px
+  #m-body.m-show-work #m-work &
+    left: (( -$menu-anchor-size/2 ))
+    line-height: $menu-anchor-size - 45px
+
