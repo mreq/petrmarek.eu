@@ -18,8 +18,26 @@ $menu-anchor-size: 145px
 =headings-font
   font-family: TeXGyreAdventorBold, $font-family-sans-serif
 
+h3
+  text-align: center
+  &:first-child
+    margin: 0 0 $grid-gutter-half
+
+.col-sm-6
+  +mq-xs
+    margin-bottom: $grid-gutter-width
+
+p
+  a
+    border-bottom: 1px dotted $gray-dark
+    &:hover
+      border-color: transparent
+
+@import 'modules/animations'
 @import 'modules/layout'
 @import 'modules/menu_animation'
 @import 'modules/menu'
 @import 'modules/back_link'
 @import 'modules/bubble'
+
+@import 'pages/contact'

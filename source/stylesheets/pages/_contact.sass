@@ -1,0 +1,41 @@
+.m-stalking
+  +ul
+  li
+    text-align: center
+    line-height: 30px
+    a
+      +clearfix
+      display: inline-block
+      text-align: left
+      min-width: 150px
+      margin-bottom: 5px
+      &:before
+        float: left
+        margin-right: 10px
+  .m-with-divider
+    &:after
+      content: '---'
+      color: #999
+      display: block
+      text-align: center
+      margin-top: -5px
+      margin-bottom: 5px
+
+.m-with-ico
+  display: block
+  &:before
+    +sq(30px)
+    content: ''
+    display: block
+    background: url('/images/github-mark.svg') center center no-repeat
+    background-size: cover
+    margin: 0 auto 5px
+  &.m-stackoverflow
+    &:before
+      background-image: url('/images/stackoverflow.svg')
+  &.m-lastfm
+    &:before
+      background-image: url('/images/lastfm.svg')
+  &.m-spotify
+    &:before
+      background-image: url('/images/spotify.svg')
