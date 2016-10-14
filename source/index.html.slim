@@ -1,49 +1,53 @@
 #m-body
   .m-section-row
     section.m-section.m-section-single id="m-contact"
-      .container
-        h2.m-section-bg Contact
+      h2.m-section-bg Contact
+      .m-section-inner
+        .container
 
-        .row
-          .col-sm-6
-            h3 Drop me a line
+          .row
+            .col-sm-6
+              h3 Drop me a line
 
-            p
-              ' I do not use skype or similar anymore. You can find me at
-              a.m-em data-em="contact/petrmarek.eu"
-              ' .
+              p
+                ' I do not use skype or similar anymore. You can email me at
+                a.m-em<> data-em="contact/petrmarek.eu"
+                ' or
+                a<> href="http://twitter.com/pmreq/" tweet at me
+                ' (I do not use twitter much).
 
-            h3 Fork this page
+              h3 Fork this page
 
-            p
-              ' There's a
-              a<> target="_blank" href="https://github.com/mreq/petrmarek.eu" github repo
-              ' for this website.
+              p
+                ' There's a
+                a<> target="_blank" href="https://github.com/mreq/petrmarek.eu" github repo
+                ' for this website.
 
-          .col-sm-6
-            h3 Feel like stalking?
+            .col-sm-6
+              h3 Feel like stalking?
 
-            ul.m-stalking
-              li
-                a.m-with-ico.m-github target="_blank" href="https://github.com/mreq"
-                  span Github
-              li.m-with-divider
-                a.m-with-ico.m-stackoverflow target="_blank" href="http://stackoverflow.com/users/910868/mreq"
-                  span Stack Overflow
-              li
-                a.m-with-ico.m-spotify target="_blank" href="https://open.spotify.com/user/pmreq"
-                  span Spotify
-              li
-                a.m-with-ico.m-lastfm target="_blank" href="http://www.last.fm/user/zloutenka"
-                  span Last.fm
+              ul.m-stalking
+                li
+                  a.m-with-ico.m-github target="_blank" href="https://github.com/mreq"
+                    span Github
+                li.m-with-divider
+                  a.m-with-ico.m-stackoverflow target="_blank" href="http://stackoverflow.com/users/910868/mreq"
+                    span Stack Overflow
+                li
+                  a.m-with-ico.m-spotify target="_blank" href="https://open.spotify.com/user/pmreq"
+                    span Spotify
+                li
+                  a.m-with-ico.m-lastfm target="_blank" href="http://www.last.fm/user/zloutenka"
+                    span Last.fm
 
       a.m-back-link.m-title href="#" title="Back to menu" menu
 
   .m-section-row
     section.m-section.m-section-third id="m-about"
-      .container
-        h2.m-section-bg About
-        ' about
+      h2.m-section-bg About
+      .m-section-inner
+        .container
+          ' about
       a.m-back-link.m-title href="#" title="Back to menu" menu
 
     section.m-section.m-section-third id="m-menu"
@@ -58,11 +62,44 @@
           a.m-title href="#contact" title="Contact information"
            ' Contact
         li.m-li.m-li-br.m-menu-blog-link
-          a.m-title href="http://www.mreq.eu" title="My blog - mreq.eu" target="_blank"
-            = image_tag 'mstile-144x144.png'
+          h1
+            a.m-title href="http://www.mreq.eu" title="My blog - mreq.eu" target="_blank"
+              = image_tag 'mstile-144x144.png'
 
     section.m-section.m-section-third id="m-work"
-      .container
-        h2.m-section-bg Work
-        ' work
+      h2.m-section-bg Work
+      .m-section-inner
+        .container
+          h3 Open source work
+
+          ul
+            - yaml_data('work_open_source').each do |project|
+              li
+                h4 = link_to project.title, project.url
+                small = nice_link_to_url project.url
+
+                - if project.tech.present?
+                  ul
+                    - project.tech.each do |tech|
+                      li = tech
+                = markdown(project.description) if project.description.present?
+
+          h3 Selected commercial work
+
+          ul
+            - yaml_data('work_commercial').each do |project|
+              li
+                h4 = link_to project.title, project.url
+                small
+                  = nice_link_to_url project.url
+                  - if project.via.present?
+                    span.m-via
+                      '  via
+                      = nice_link_to_url project.via
+                - if project.tech.present?
+                  ul
+                    - project.tech.each do |tech|
+                      li = tech
+                = markdown(project.description) if project.description.present?
+
       a.m-back-link.m-title href="#" title="Back to menu" menu

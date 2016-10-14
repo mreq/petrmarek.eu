@@ -2,6 +2,7 @@
   +ul
   +sq(280px)
   +icl(280px, 280px)
+
   .m-li-tl
     +topleft
   .m-li-tr
@@ -10,6 +11,7 @@
     +bottomleft
   .m-li-br
     +bottomright
+
   a
     +sq(115px)
     +rounded(50%)
@@ -22,8 +24,12 @@
     text-transform: uppercase
     &, &:focus, &:active
       background: $gray-light
-    &:hover
-      background: $gray-dark
+    +mq-sm-up
+      &:hover
+        background: $gray-dark
+
+  h1
+    margin: 0
 
 .m-menu
   .m-menu-blog-link
@@ -32,8 +38,9 @@
     a
       +sq($menu-anchor-size)
       background: $gray-dark
-      &:hover
-        +animation-wiggle
+      +mq-sm-up
+        &:hover
+          +animation-wiggle
     img
       $w: 90px
       +icl($w, $w)

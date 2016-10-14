@@ -1,6 +1,6 @@
 $gray-dark: #333
 $gray-light: #999
-$gray-lightest: #f2f2f2
+$gray-lightest: rgba(145, 145, 145, .15)
 $text-color: $gray-dark
 $link-color: $text-color
 $headings-line-height: 1.2
@@ -13,7 +13,8 @@ $menu-anchor-size: 145px
 @import '../../bower_components/mreq-mixins/mreq'
 
 =custom-transition($property: all)
-  +transition($property .1s ease-in-out)
+  #m-body.m-loaded &
+    +transition($property .1s ease-in-out)
 
 =headings-font
   font-family: TeXGyreAdventorBold, $font-family-sans-serif

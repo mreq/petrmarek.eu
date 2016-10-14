@@ -10,6 +10,8 @@
   font-weight: bold
   font-size: 30px
   line-height: $menu-anchor-size
+  z-index: 2
+
   &:hover, &:focus
     background: $gray-light
     color: white
@@ -20,6 +22,7 @@
     margin-left: -$menu-anchor-size/2
     &:hover, &:focus
       margin-bottom: 5px
+
   #m-body.m-show-contact #m-contact &
     bottom: (( -$menu-anchor-size/2 ))
     line-height: $menu-anchor-size - 45px
@@ -31,6 +34,7 @@
     right: 0
     &:hover, &:focus
       margin-right: 5px
+
   #m-body.m-show-about #m-about &
     right: (( -$menu-anchor-size/2 ))
     line-height: $menu-anchor-size - 45px
@@ -42,6 +46,7 @@
     margin-top: -$menu-anchor-size/2
     &:hover, &:focus
       margin-left: 5px
+
   #m-body.m-show-work #m-work &
     left: (( -$menu-anchor-size/2 ))
     line-height: $menu-anchor-size - 45px

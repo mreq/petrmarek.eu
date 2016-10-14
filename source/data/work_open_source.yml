@@ -1,0 +1,24 @@
+- title: slick lightbox
+  url: 'http://mreq.github.io/slick-lightbox/'
+  description: |
+    A lightbox wrapper for Ken's amazing [slick carousel](https://github.com/kenwheeler/slick).
+
+- title: SublimeMagic
+  url: 'https://github.com/mreq/SublimeMagic'
+  description: |
+    A magic plugin for Sublime Text.
+
+- title: XeLaTeX emoji
+  url: 'https://github.com/mreq/xelatex-emoji'
+  description: |
+    Emoji support for XeLaTeX documents.
+
+- title: mreq theme
+  url: 'https://github.com/mreq/mreq-theme'
+  description: |
+    Custom Sublime Text theme.
+
+- title: wmctile
+  url: 'https://github.com/mreq/wmctile'
+  description: |
+    Window manager's best friend. In a gem.
