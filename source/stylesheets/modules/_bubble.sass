@@ -1,22 +1,24 @@
 .m-bubble
-  +bottomleft(100px)
-  +transition(all .25s)
-  +opacity(0)
+  position: absolute
+  bottom: 100px
+  left: 0
+  transition: all .25s
+  opacity: 0
   width: 100%
   text-align: center
   z-index: 2
   .m-inner
-    +rounded($border-radius-large)
+    border-radius: $border-radius-large
     display: inline-block
     padding: 6px 10px
     background: $gray-light
     color: white
 
   &.m-fade-in
-    +opacity(1)
+    opacity: 1
 
   &.m-fade-out
-    +opacity(0)
+    opacity: 0
 
   +mq-sm
     display: none !important

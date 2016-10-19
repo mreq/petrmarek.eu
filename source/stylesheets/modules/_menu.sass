@@ -1,7 +1,8 @@
 .m-menu
   +ul
-  +sq(280px)
   +icl(280px, 280px)
+  width: 280px
+  height: 280px
 
   .m-li-tl
     +topleft
@@ -13,9 +14,10 @@
     +bottomright
 
   a
-    +sq(115px)
-    +rounded(50%)
     +custom-transition(background-color)
+    width: 115px
+    height: 115px
+    border-radius: 50%
     display: block
     color: white
     line-height: 115px
@@ -36,7 +38,8 @@
     bottom: -15px
     right: -15px
     a
-      +sq($menu-anchor-size)
+      width: $menu-anchor-size
+      height: $menu-anchor-size
       background: $gray-dark
       +mq-sm-up
         &:hover

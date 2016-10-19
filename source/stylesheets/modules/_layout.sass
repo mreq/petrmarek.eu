@@ -1,5 +1,6 @@
 html, body
-  +sq(100%)
+  width: 100%
+  height: 100%
   min-width: 320px
   overflow: hidden
 
@@ -33,9 +34,10 @@ html, body
 
 .m-section-bg
   +headings-font
-  +sq(390px)
   +il(390px)
-  +rounded(50%)
+  border-radius: 50%
+  width: 390px
+  height: 390px
   top: -235px
   z-index: 0
   background: $gray-lightest
@@ -47,7 +49,8 @@ html, body
   text-transform: uppercase
   font-weight: bold
   +mq-sm
-    +sq(220px)
+    width: 220px
+    height: 220px
     top: -170px
     font-size: 30px
     line-height: 30px
@@ -55,8 +58,8 @@ html, body
     margin-left: -110px
 
 #m-body
-  +transition(opacity .25s)
-  +opacity(0)
+  transition: opacity .25s
+  opacity: 0
   width: 300%
   height: 200%
   overflow: hidden
@@ -71,5 +74,5 @@ html, body
     left: -200%
 
   &.m-loaded
-    +transition(all .5s cubic-bezier(.02, .01, .47, 1))
-    +opacity(1)
+    transition: all .5s cubic-bezier(.02, .01, .47, 1)
+    opacity: 1

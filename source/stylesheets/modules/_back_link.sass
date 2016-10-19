@@ -1,7 +1,8 @@
 .m-back-link
-  +sq($menu-anchor-size)
-  +rounded(50%)
   +custom-transition(all)
+  width: $menu-anchor-size
+  height: $menu-anchor-size
+  border-radius: 50%
   background: $gray-lightest
   position: absolute
   color: white
@@ -28,7 +29,7 @@
     line-height: $menu-anchor-size - 45px
 
   #m-about &
-    +rotate(-90deg)
+    transform: rotate(-90deg)
     top: 50%
     margin-top: -$menu-anchor-size/2
     right: 0
@@ -40,7 +41,7 @@
     line-height: $menu-anchor-size - 45px
 
   #m-work &
-    +rotate(90deg)
+    transform: rotate(90deg)
     top: 50%
     left: 0
     margin-top: -$menu-anchor-size/2

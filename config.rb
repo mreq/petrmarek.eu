@@ -42,7 +42,7 @@ end
 activate :sprockets do |s|
   s.supported_output_extensions << '.es6'
 end
-activate :directory_indexes
+activate :autoprefixer
 
 
 sprockets.append_path File.join(root, 'bower_components')

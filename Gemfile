@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'middleman', '~> 4.1.7'
 gem 'middleman-livereload', '~> 3.4.6'
 gem 'middleman-sprockets', '~> 4.0.0'
+gem 'middleman-autoprefixer'
 gem 'sprockets-es6'
 
 gem 'pry', '~> 0.10.3'
