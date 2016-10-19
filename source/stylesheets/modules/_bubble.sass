@@ -1,5 +1,7 @@
 .m-bubble
   +bottomleft(100px)
+  +transition(all .25s)
+  +opacity(0)
   width: 100%
   text-align: center
   z-index: 2
@@ -9,6 +11,12 @@
     padding: 6px 10px
     background: $gray-light
     color: white
+
+  &.m-fade-in
+    +opacity(1)
+
+  &.m-fade-out
+    +opacity(0)
 
   +mq-sm
     display: none !important

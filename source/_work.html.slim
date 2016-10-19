@@ -1,0 +1,31 @@
+h3 Open source work
+
+ul
+  - yaml_data('work_open_source').each do |project|
+    li
+      h4 = link_to project.title, project.url
+      small = nice_link_to_url project.url
+
+      - if project.tech.present?
+        ul
+          - project.tech.each do |tech|
+            li = tech
+      = markdown(project.description) if project.description.present?
+
+h3 Selected commercial work
+
+ul
+  - yaml_data('work_commercial').each do |project|
+    li
+      h4 = link_to project.title, project.url
+      small
+        = nice_link_to_url project.url
+        - if project.via.present?
+          span.m-via
+            '  via
+            = nice_link_to_url project.via
+      - if project.tech.present?
+        ul
+          - project.tech.each do |tech|
+            li = tech
+      = markdown(project.description) if project.description.present?

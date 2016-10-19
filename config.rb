@@ -1,4 +1,5 @@
 require 'ostruct'
+require 'sprockets/es6'
 
 configure :development do
   activate :livereload
@@ -38,8 +39,11 @@ helpers do
   end
 end
 
-activate :sprockets
+activate :sprockets do |s|
+  s.supported_output_extensions << '.es6'
+end
 activate :directory_indexes
+
 
 sprockets.append_path File.join(root, 'bower_components')
 
