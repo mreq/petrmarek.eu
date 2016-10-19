@@ -14,9 +14,8 @@
     "build"
   ],
   "dependencies": {
-    "jquery": "^1.12.3",
     "mreq-mixins": "^0.0.6",
-    "respond": "^1.4.2",
     "bootstrap-sass": "^3.3.6"
-  }
+  },
+  "ignoredDependencies": ["jquery"]
 }
