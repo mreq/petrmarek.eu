@@ -6,7 +6,10 @@ let replaceEm = function (el) {
 }
 
 let protectEmails = function () {
-  document.querySelectorAll('.m-em').forEach(replaceEm)
+  let emails = document.querySelectorAll('.m-em')
+  for (var i = emails.length - 1; i >= 0; i--) {
+    replaceEm(emails[i])
+  }
 }
 
 protectEmails()

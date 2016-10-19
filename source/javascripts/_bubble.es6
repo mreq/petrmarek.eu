@@ -26,7 +26,7 @@ class Bubble {
   hide () {
     this.titleElement.removeEventListener('mouseleave', this.hide)
     this.bubble.className += ' m-fade-out'
-    setTimeout((bubble) => document.body.removeChild(bubble), 300, this.bubble)
+    setTimeout(() => document.body.removeChild(this.bubble), 300)
   }
 }
 

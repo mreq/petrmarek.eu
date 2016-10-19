@@ -21,6 +21,9 @@ html
       ga('create', 'UA-20768789-1', 'petrmarek.eu');
       ga('send', 'pageview');
 
+    /[if lt IE 9]
+      = javascript_include_tag 'ancient'
+
   body
     = yield
 
