@@ -1,4 +1,4 @@
-- title: Českomoravská stavební spořitelna.
+- title: Českomoravská stavební spořitelna
   url: 'https://www.cmss.cz/'
   tech:
     - HTML5
@@ -15,16 +15,16 @@
 
 - title: iXprint
   url: 'http://www.ixprint.eu/'
-  description: |
-    HTML5, Marionette.js
-  via: 'http://wavevision.eu/'
-
-- title: ČNB
-  url: 'http://www.chranimekorunu.cz/'
   tech:
     - HTML5
-  description: |
-    HTML5 canvas games, Kinect Xbox One controls
+    - Marionette.js
+  via: 'http://wavevision.eu/'
+
+- title: ČNB - Chráníme korunu
+  url: 'http://www.chranimekorunu.cz/'
+  tech:
+    - HTML5 canvas games
+    - Kinect Xbox One
   via: 'http://sinfin.digital/'
 
 - title: Smart Cities

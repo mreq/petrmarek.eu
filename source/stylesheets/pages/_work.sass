@@ -1,0 +1,37 @@
+.m-work-ul
+  +ul
+
+  h4
+    margin: 0
+
+  small
+    display: block
+    font-size: .8em
+    margin: 5px 0
+
+  p
+    margin: 5px 0 0
+
+  .col-sm-6
+    margin-bottom: $grid-gutter-width
+
+  +mq-sm-only
+    .col-sm-6:nth-child(2n + 1)
+      clear: left
+
+  +mq-md-up
+    .col-md-4:nth-child(3n + 1)
+      clear: left
+
+.m-tech
+  +ul
+  li
+    display: inline
+    + li
+      &:before
+        content: ', '
+        display: inline
+
+#m-work
+  h3
+    margin-bottom: $grid-gutter-width

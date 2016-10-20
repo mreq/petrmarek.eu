@@ -9,15 +9,11 @@ $link-hover-decoration: none
 $menu-anchor-size: 145px
 
 @import 'bootstrap-custom'
-@import 'fonts'
 @import '../../bower_components/mreq-mixins/mreq'
 
 =custom-transition($property: all)
   #m-body.m-loaded &
     transition: $property .1s ease-in-out
-
-=headings-font
-  font-family: TeXGyreAdventorBold, $font-family-sans-serif
 
 h3
   text-align: center
@@ -28,11 +24,17 @@ h3
   +mq-xs
     margin-bottom: $grid-gutter-width
 
-p
+h3, p
   a
     border-bottom: 1px dotted $gray-dark
     &:hover
       border-color: transparent
+
+pre
+  font: 4px/2px monospace
+  max-width: 444px
+  margin: 0 auto
+  overflow: hidden
 
 @import 'modules/animations'
 @import 'modules/layout'
@@ -42,3 +44,5 @@ p
 @import 'modules/bubble'
 
 @import 'pages/contact'
+@import 'pages/about'
+@import 'pages/work'
