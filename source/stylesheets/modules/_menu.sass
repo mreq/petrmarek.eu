@@ -4,15 +4,6 @@
   width: 280px
   height: 280px
 
-  .m-li-tl
-    +topleft
-  .m-li-tr
-    +topright
-  .m-li-bl
-    +bottomleft
-  .m-li-br
-    +bottomright
-
   a
     +custom-transition(background-color)
     width: 115px
@@ -33,7 +24,15 @@
   h1
     margin: 0
 
-.m-menu
+  .m-li-tl
+    +topleft
+  .m-li-tr
+    +topright
+  .m-li-bl
+    +bottomleft
+  .m-li-br
+    +bottomright
+
   .m-menu-blog-link
     bottom: -15px
     right: -15px
@@ -49,3 +48,6 @@
       +icl($w, $w)
       width: $w
 
+  +mq-xs
+    width: 260px
+    margin-left: -130px
