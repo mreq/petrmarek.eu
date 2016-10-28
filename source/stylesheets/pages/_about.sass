@@ -1,14 +1,24 @@
-.m-about-top
-  +clearfix
-
+#m-about
   h3
     text-align: left
 
-  pre
-    float: left
-    margin-right: $grid-gutter-width
+.m-about-top
+  margin-bottom: $grid-gutter-width
+
+  +mq-sm-up
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    pre
+      margin-right: $grid-gutter-width
+      flex: 1 1 444px
+
+    .m-text
+      flex: 1 1 0
 
   +mq-xs
     pre
-      float: none
       margin: 0 auto $grid-gutter-width
+
+.m-about-bottom
