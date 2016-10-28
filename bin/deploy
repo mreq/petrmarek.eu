@@ -1,0 +1,5 @@
+#!/bin/bash
+sh bin/build && \
+rsync -avz build/ mreq:petrmarek.eu --delete
+
+notify-send -u low -i emblem-default 'petrmarek.eu' 'Changes rsynced.'
