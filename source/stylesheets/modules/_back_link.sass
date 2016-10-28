@@ -3,9 +3,7 @@
   width: $menu-anchor-size
   height: $menu-anchor-size
   border-radius: 50%
-  background: $gray-lightest
   position: absolute
-  color: white
   text-align: center
   text-transform: uppercase
   font-weight: bold
@@ -13,9 +11,14 @@
   line-height: $menu-anchor-size
   z-index: 2
 
-  &:hover, &:focus
-    background: $gray-light
+  &, &:hover, &:focus
+    background: $gray-lightest
     color: white
+
+  +mq-md-up
+    &:hover, &:focus
+      background: $gray-light
+      color: white
 
   #m-contact &
     bottom: 0

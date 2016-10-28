@@ -37,6 +37,10 @@ helpers do
     renderer = Redcarpet::Render::HTML.new(render_options)
     Redcarpet::Markdown.new(renderer, extensions).render(text).html_safe
   end
+
+  def header(title)
+    partial 'header', locals: { title: title }
+  end
 end
 
 activate :sprockets do |s|
@@ -50,6 +54,8 @@ sprockets.append_path File.join(root, 'bower_components')
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+
+set :markdown_engine, :redcarpet
 
 configure :build do
   # For example, change the Compass output style for deployment
