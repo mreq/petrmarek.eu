@@ -34,19 +34,22 @@
     +bottomright
 
   .m-menu-blog-link
+    $img-width: 90px
     bottom: -15px
     right: -15px
     a
+      $p: ($menu-anchor-size - $img-width)/2
       width: $menu-anchor-size
       height: $menu-anchor-size
       background: $gray-dark
+      padding: $p 0 0
       +mq-sm-up
         &:hover
           +animation-wiggle
     img
-      $w: 90px
-      +icl($w, $w)
-      width: $w
+      display: block
+      width: $img-width
+      margin: 0 auto
 
   +mq-xs
     width: 260px
