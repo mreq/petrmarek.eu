@@ -14,16 +14,22 @@ html, body
   height: 100%
   position: relative
 
-.m-section-inner
+.m-section-scroll
   padding-top: 100px
   padding-bottom: 85px
   height: 100%
   overflow: auto
   overflow-x: hidden
+
+.m-section-inner
+  height: 100%
   position: relative
   z-index: 1
   > .container
     overflow: hidden
+  @media screen and (min-height: 700px) and (min-width: #{$screen-sm})
+    display: flex
+    align-items: center
 
 .m-section-third
   float: left

@@ -2,50 +2,15 @@
   .m-section-row
     section.m-section.m-section-single id="m-contact"
       h2.m-section-bg Contact
-      .m-section-inner
+      .m-section-scroll: .m-section-inner
         .container
-
-          .row
-            .col-sm-6
-              h3 Drop me a line
-
-              p
-                ' I do not use skype or similar anymore. You can email me at
-                a.m-em<> data-em="contact/petrmarek.eu"
-                ' or
-                a<> href="http://twitter.com/pmreq/" tweet at me
-                ' (I do not use twitter much).
-
-              h3 Fork this page
-
-              p
-                ' There's a
-                a<> target="_blank" href="https://github.com/mreq/petrmarek.eu" github repo
-                ' for this website.
-
-            .col-sm-6
-              h3 Feel like stalking?
-
-              ul.m-stalking
-                li
-                  a.m-with-ico.m-github target="_blank" href="https://github.com/mreq"
-                    span Github
-                li.m-with-divider
-                  a.m-with-ico.m-stackoverflow target="_blank" href="http://stackoverflow.com/users/910868/mreq"
-                    span Stack Overflow
-                li
-                  a.m-with-ico.m-spotify target="_blank" href="https://open.spotify.com/user/pmreq"
-                    span Spotify
-                li
-                  a.m-with-ico.m-lastfm target="_blank" href="http://www.last.fm/user/zloutenka"
-                    span Last.fm
-
+          = partial 'contact'
       a.m-back-link.m-title href="#" title="Back to menu" menu
 
   .m-section-row
     section.m-section.m-section-third id="m-about"
       h2.m-section-bg About
-      .m-section-inner
+      .m-section-scroll: .m-section-inner
         .container
           = partial 'about'
       a.m-back-link.m-title href="#" title="Back to menu" menu
@@ -68,7 +33,7 @@
 
     section.m-section.m-section-third id="m-work"
       h2.m-section-bg Work
-      .m-section-inner
+      .m-section-scroll: .m-section-inner
         .container
           = partial 'work'
 
