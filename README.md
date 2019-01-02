@@ -1,3 +1,3 @@
 # petrmarek.eu
 
-source of http://www.petrmarek.eu/
+source of https://www.petrmarek.eu/

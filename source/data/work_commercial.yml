@@ -1,9 +1,3 @@
-- title: Českomoravská stavební spořitelna
-  url: 'https://www.cmss.cz/'
-  tech:
-    - HTML5
-  via: 'http://sinfin.digital/'
-
 - title: Squared.one
   url: 'https://www.squared.one/'
   tech:
@@ -11,32 +5,24 @@
     - Ruby on Rails
     - Ember.js
     - XeLaTeX
-  via: 'http://sinfin.digital/'
-
-- title: iXprint
-  url: 'http://www.ixprint.eu/'
-  tech:
-    - HTML5
-    - Marionette.js
-  via: 'http://wavevision.eu/'
-
-- title: ČNB - Chráníme korunu
-  url: 'http://www.chranimekorunu.cz/'
-  tech:
-    - HTML5 canvas games
-    - Kinect Xbox One
-  via: 'http://sinfin.digital/'
-
-- title: Smart Cities
-  url: 'http://www.scmagazine.cz/'
-  tech:
-    - HTML5
-    - Ruby on Rails
-  via: 'http://sinfin.digital/'
 
 - title: REDSIDE
-  url: 'http://www.redsidefunds.com/'
+  url: 'https://www.redsidefunds.com/'
   tech:
     - HTML5
     - Ruby on Rails
-  via: 'http://sinfin.digital/'
+  via: 'https://sinfin.digital/'
+
+- title: Richee
+  url: 'https://www.richee.cz/'
+  tech:
+    - HTML5
+    - Ruby on Rails
+  via: 'https://sinfin.digital/'
+
+- title: LiaStone
+  url: 'https://www.liastone.cz/'
+  tech:
+    - HTML5
+    - Ruby on Rails
+  via: 'https://sinfin.digital/'
